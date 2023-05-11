@@ -4,7 +4,7 @@ const EpisodeItem = (props) => {
     const {id, episode, name} = props;
 
     return (
-        (<li className="collection-item"><div>{episode} : {name} <Link to={`/episode/${id}`} className="secondary-content"><i className="material-icons">visibility</i></Link></div></li>)
+        (<li className="collection-item"><div className="episode-item">{episode} : {name} <Link to={`/episode/${id}`} className="secondary-content my-link"><i className="material-icons">visibility</i></Link></div></li>)
     )
 }
 export {EpisodeItem}

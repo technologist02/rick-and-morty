@@ -71,3 +71,22 @@ footer {
     justify-content: center;
     flex-wrap: wrap;
 }
+#nav-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.active {
+    color: mediumspringgreen;
+    text-decoration: underline;
+    font-size: larger;
+}
+
+.episode-item {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+}
+.my-link {
+    display: flex;
+    justify-content: end;
+}

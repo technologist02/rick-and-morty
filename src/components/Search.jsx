@@ -9,6 +9,7 @@ const Search = ({searchChar,setName}) => {
       <div className="row">
         <div className="input-field col s12">
           <input id="search"
+          style={{color:"white"}}
            type="text"
            className="validate"
            placeholder="Search"
