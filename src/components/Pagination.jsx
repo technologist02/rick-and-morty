@@ -3,7 +3,7 @@ import { getCountPages } from "../api";
 
 export function Pagination(props) {
 
-    const {pages, handlePage, name} = props;
+    const {pages = 1, handlePage, name} = props;
     const count = getCountPages(pages);
 
     return (

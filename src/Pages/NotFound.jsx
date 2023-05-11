@@ -1,4 +1,4 @@
 export function NotFound() {
 
-    return <h3>Page is Not Found!</h3>
+    return <p>Page is Not Found!</p>
 }

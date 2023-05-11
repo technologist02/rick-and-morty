@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 export const Char = (props) => {
     const {
-        id, name, status, species, type, gender, image, origin, location
+        id, name, status, species, type, gender, image, location
     } = props;
 
 

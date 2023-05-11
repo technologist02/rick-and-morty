@@ -16,7 +16,7 @@ export function Characters() {
         setLoad(true);
         fetch(`https://rickandmortyapi.com/api/character/?page=1${name}`)
         .then(response=>response.json())
-        .then(data=>{setChars(data.results); setPages(data.info.pages);setLoad(false)})
+        .then(data=>{setChars(data.results); setPages(data.info.pages);setLoad(false)}).catch(()=>{setPages([]);setChars([]);setLoad(false)})
     }
 
     const getPage = async(page,name) => {

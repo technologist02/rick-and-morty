@@ -6,7 +6,6 @@ const EpisodeChars = (props) => {
     
     const {characters} = props;
     const [chars, setChars] = useState([]);
-    //const [loading, setLoad] = useState(true);
 
     function charsId (characters){
         const array = characters.map(el => el.replace('https://rickandmortyapi.com/api/character/',''))
