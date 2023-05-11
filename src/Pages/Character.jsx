@@ -10,7 +10,7 @@ export function Character() {
     const [loading, setLoad]=useState(true);
     const [char, setChar] = useState({});
 
-    const { name, status, species, gender, type, image, episode, location} = char;
+    const { name, status, species, gender, image, episode, location} = char;
 
     
     useEffect(() => {
