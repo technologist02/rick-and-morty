@@ -18,6 +18,7 @@ const Episode = () => {
 
     return (
         <div>
+            <h4 style={{color:"whitesmoke", textAlign:"center"}}>{info.episode} {info.name}</h4>
             {
              loading ? (<Preloader />) : (<EpisodeChars characters={info.characters} />)
             }   

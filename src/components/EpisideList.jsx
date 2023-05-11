@@ -24,7 +24,7 @@ const EpisodeList = (props) => {
         {
             loading ? (<Preloader />) : (<div className="episode-list">
                 <ul className="collection">
-                    <li className="collection-item"><h6>Episodes</h6></li>
+                    <li className="collection-item"><h5>Episodes</h5></li>
                     {
                     Array.isArray(episodes) ? (episodes.map(el=>(<EpisodeItem key={el.id} {...el} />))):
                         (<EpisodeItem key={episodes.id} {...episodes} />) 

@@ -12,7 +12,7 @@ const EpisodeChars = (props) => {
         return array;
     }
     useEffect(() => {
-        getCharacterById(charsId(characters)).then(data=>{setChars(data);})
+        getCharacterById(charsId(characters.reverse())).then(data=>{setChars(data);})
     },[]);
     
     return (
