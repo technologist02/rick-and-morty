@@ -10,10 +10,10 @@ export const Char = (props) => {
             <img src={image} alt= {name} />
         </div>
         <div className="card-content">
-            <span  className="card-title">{name}</span>
-            <h6>{type} {species}</h6>
+            <span  className="card-title" style={{fontWeight:600}}>{name}</span>
+            <p>{type} {species}</p>
             <p>{gender} {status}</p>
-            <h6>{location.name}</h6>
+            <p>{location.name}</p>
         </div>
         <div className="card-action">
             <Link to={`/characters/${id}`} className="btn waves-effect waves-light">View
